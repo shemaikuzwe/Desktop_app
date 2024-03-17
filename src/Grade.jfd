@@ -12,6 +12,7 @@ new FormModel {
 			"background": new java.awt.Color( 51, 51, 51, 255 )
 			"resizable": false
 			"$sizePolicy": 1
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/Images/calculator.png" )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label1"
 				"text": "Grade Calculator"

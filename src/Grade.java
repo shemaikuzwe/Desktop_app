@@ -77,6 +77,7 @@ public class Grade extends JFrame {
         setTitle("Grade Calculator");
         setBackground(new Color(0x333333));
         setResizable(false);
+        setIconImage(new ImageIcon(getClass().getResource("/Images/calculator.png")).getImage());
         var contentPane = getContentPane();
         contentPane.setLayout(new GridLayoutManager(4, 3, new Insets(0, 0, 0, 0), -1, -1));
 
