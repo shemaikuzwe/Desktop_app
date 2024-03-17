@@ -1,0 +1,94 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+			"$columnCount": 3
+			"$rowCount": 4
+		} ) {
+			name: "this"
+			"title": "Grade Calculator"
+			"background": new java.awt.Color( 51, 51, 51, 255 )
+			"resizable": false
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Grade Calculator"
+				"font": new java.awt.Font( "Tahoma", 1, 18 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Garde:"
+				"font": new java.awt.Font( "Tahoma", 0, 14 )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"row": 1
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 1
+				"row": 1
+				"fill": 1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Enter"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "CalculateBtnClicked", true ) )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 2
+				"row": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Avarage:"
+				"font": new java.awt.Font( "Tahoma", 0, 14 )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"row": 2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 1
+				"row": 2
+				"fill": 1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Clear"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ClearBtnClicked", true ) )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 2
+				"row": 2
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": " Final grade: "
+				"font": new java.awt.Font( "Tahoma", 0, 14 )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"row": 3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 1
+				"row": 3
+				"fill": 1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Exit"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ExitBtnClicked", true ) )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 2
+				"row": 3
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 50, 5 )
+			"size": new java.awt.Dimension( 735, 450 )
+		} )
+	}
+}
